@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+
+    <style>
+    h1{
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+    #paragraph {
+                display: grid;
+                max-width: 102vh;
+                width: 80vw;
+                text-align: justify;
+
+         }
+    #grid1 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: minmax(100px, auto);
+            max-width: 960px;
+            width: 90%;
+        }
+
+    #box {
+            display: grid;
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            background-color:rgb(127, 140, 255);
+            border-radius: 7%;
+            background-image: url("placeholder-image.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            align-items: flex-end;
+            
+        }
+    
+        @media screen and (max-width: 1024px) {
+#grid1 {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        }
+
+@media screen and (max-width: 768px) {
+#grid1 {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        }
+
+@media screen and (max-width: 414px) {
+#grid1 {
+        grid-template-columns: repeat(1, 1fr);
+        }
+        }
+#text {
+        display: inline-block;
+        width: 120px;
+        height: 30px;
+        border-radius: 0 0 7px 7px;
+        background-color:beige;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+
+    <div id="grid1">
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+        <div id="box">
+            <div id="text">Image Title</div>
+        </div>
+    </div>
+
+    <div id="paragraph">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Sequi, quaerat! Obcaecati eius ex nam harum quisquam sit. 
+        Illum dolore maiores quaerat cum laboriosam exercitationem, perferendis eligendi magnam cupiditate tenetur error 
+        architecto quidem voluptates blanditiis ipsum, vero distinctio odio ipsam! Corrupti quis vel nesciunt dolorum recusandae 
+        quidem at dolore omnis optio tempora est corporis aliquam praesentium cupiditate, iusto deserunt! Temporibus minima reprehenderit 
+        repudiandae quos vero sint accusamus iure cum libero possimus debitis totam modi deleniti perspiciatis a, nesciunt quod sed eum ipsa 
+        quisquam at quae distinctio provident. Voluptates eius cum sunt totam assumenda voluptatem possimus? Tempore veritatis consequuntur 
+        facilis ipsa repudiandae!</p>
+    </div>
+</body>
+</html>
